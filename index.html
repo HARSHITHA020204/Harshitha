@@ -1,17 +1,45 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        .food-item {
+            text-align: center;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
 <body>
-    <h1>My Food</h1>
-    <p>The Perfect Sandwich, A Real NYC Classic</p>
-    <img src="https://www.w3schools.com/w3images/sandwich.jpg" alt="Sandwich" width="200">
+
+    <h1 style="text-align: center;">My Food</h1>
     
-    <p>Let Me Tell You About This Steak</p>
-    <img src="https://www.w3schools.com/w3images/steak.jpg" alt="Steak" width="200">
-    
-    <p>Cherries, interrupted</p>
-    <img src="https://www.w3schools.com/w3images/cherries.jpg" alt="Cherries" width="200">
-    
-    <p>Once Again, Robust Wine and Vegetable Pasta</p>
-    <img src="https://www.w3schools.com/w3images/wine.jpg" alt="Pasta" width="200">
+    <div class="container">
+        <div class="food-item">
+            <img src="https://www.w3schools.com/w3images/sandwich.jpg">
+            <p>The Perfect Sandwich, A Real NYC Classic</p>
+        </div>
+        <div class="food-item">
+            <img src="https://www.w3schools.com/w3images/steak.jpg">
+            <p>Let Me Tell You About This Steak</p>
+        </div>
+        <div class="food-item">
+            <img src="https://www.w3schools.com/w3images/cherries.jpg">
+            <p>Cherries, interrupted</p>
+        </div>
+        <div class="food-item">
+            <img src="https://www.w3schools.com/w3images/wine.jpg">
+            <p>Once Again, Robust Wine and Vegetable Pasta</p>
+        </div>
+    </div>
+
 </body>
 </html>
