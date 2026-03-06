@@ -1,45 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
-        .container {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
-            padding: 20px;
-        }
-        .food-item {
-            text-align: center;
-        }
-        img {
-            width: 100%;
-            height: auto;
-            border: 1px solid #ccc;
-        }
-    </style>
+<style>
+* { box-sizing: border-box; }
+.row { display: flex; flex-wrap: wrap; padding: 0 4px; }
+.column { flex: 25%; max-width: 25%; padding: 0 4px; }
+.column img { margin-top: 8px; vertical-align: middle; width: 100%; }
+@media screen and (max-width: 800px) { .column { flex: 50%; max-width: 50%; } }
+@media screen and (max-width: 600px) { .column { flex: 100%; max-width: 100%; } }
+</style>
 </head>
 <body>
 
-    <h1 style="text-align: center;">My Food</h1>
-    
-    <div class="container">
-        <div class="food-item">
-            <img src="https://www.w3schools.com/w3images/sandwich.jpg">
-            <p>The Perfect Sandwich, A Real NYC Classic</p>
-        </div>
-        <div class="food-item">
-            <img src="https://www.w3schools.com/w3images/steak.jpg">
-            <p>Let Me Tell You About This Steak</p>
-        </div>
-        <div class="food-item">
-            <img src="https://www.w3schools.com/w3images/cherries.jpg">
-            <p>Cherries, interrupted</p>
-        </div>
-        <div class="food-item">
-            <img src="https://www.w3schools.com/w3images/wine.jpg">
-            <p>Once Again, Robust Wine and Vegetable Pasta</p>
-        </div>
-    </div>
+<h1 style="text-align:center">My Food</h1>
+
+<div class="row"> 
+  <div class="column">
+    <img src="https://www.w3schools.com/w3images/sandwich.jpg">
+    <p>The Perfect Sandwich, A Real NYC Classic</p>
+    <img src="https://www.w3schools.com/w3images/popsicle.jpg">
+    <p>All Popsicles, No Artificial Sweeteners</p>
+  </div>
+  <div class="column">
+    <img src="https://www.w3schools.com/w3images/steak.jpg">
+    <p>Let Me Tell You About This Steak</p>
+    <img src="https://www.w3schools.com/w3images/salmon.jpg">
+    <p>Salmon For Your Skin</p>
+  </div>
+  <div class="column">
+    <img src="https://www.w3schools.com/w3images/cherries.jpg">
+    <p>Cherries, interrupted</p>
+    <img src="https://www.w3schools.com/w3images/sandwich.jpg">
+    <p>The Perfect Dessert</p>
+  </div>
+  <div class="column">
+    <img src="https://www.w3schools.com/w3images/wine.jpg">
+    <p>Once Again, Robust Wine and Vegetable Pasta</p>
+    <img src="https://www.w3schools.com/w3images/croissant.jpg">
+    <p>Le Frenchy</p>
+  </div>
+</div>
 
 </body>
 </html>
