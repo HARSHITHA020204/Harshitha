@@ -1,1 +1,1 @@
-# Harshitha
+# Harshitha ACTIVITY 1-SCM PRACTICE
